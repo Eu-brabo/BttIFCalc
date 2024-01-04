@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(1, 1, 38);
+  }
+
+h1 {
+    color: aliceblue;
+    font-family: lucida console;
+    text-align: center;
+}
+
+p {
+    color: aliceblue;
+    font-family: lucida console;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
