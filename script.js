@@ -16,22 +16,26 @@ function submit() {
     var medumbi = (600 - (ab+bb+cb))/3;
     var results = ab + bb + cb + db;
     var finals = (600 - results) / 3;
+    var finarred = finals.toFixed(2);
+    var tresarred = medtresbi.toFixed(2);
+    var doisarred = meddoisbi.toFixed(2);
+    var umarred = medumbi.toFixed(2);
 
     var a = 1;
     document.getElementById("grade").innerHTML = results + " pontos";
     if (b + c + d == 0) {
-        document.getElementById("medness").innerHTML = medtresbi + " nas médias seguintes";
+        document.getElementById("medness").innerHTML = tresarred + " nas médias seguintes";
     } else if (c + d == 0) {
-        document.getElementById("medness").innerHTML = meddoisbi + " nas médias seguintes";
+        document.getElementById("medness").innerHTML = doisarred + " nas médias seguintes";
     } else if (d == 0) {
-        document.getElementById("medness").innerHTML = medumbi + " nas médias seguintes";
+        document.getElementById("medness").innerHTML = umarred + " nas médias seguintes";
         document.getElementById("bool").innerHTML = "";
         document.getElementById("prv_fin").innerHTML = "";
     } else if (d != 0) {
         document.getElementById("medness").innerHTML = "";
         if (results < 600) {
         document.getElementById("bool").innerHTML = "prova final";
-        document.getElementById("prv_fin").innerHTML = finals + " ponto(s) para passar";
+        document.getElementById("prv_fin").innerHTML = finarred + " ponto(s) para passar";
         } else if (results >= 600) {
         document.getElementById("bool").innerHTML = "passou :D";
         document.getElementById("prv_fin").innerHTML = "";
